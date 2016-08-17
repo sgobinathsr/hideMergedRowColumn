@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link href="css/contextMenu/jquery.contextMenu.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/hideRowColumn.js" type="text/javascript"></script>
+        <script src="js/contextMenu/jquery.contextMenu.js" type="text/javascript"></script>
+        <style>
+            .hideHover{
+                background-color: #DDD;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+               $("#newtest").hideRowColumn();
+            });
+        </script>        
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <br/>        
+        <table style="border-collapse: collapse;" width="100%" border="1" id="newtest">
+            <thead>
+                <tr>
+                  <th rowspan="3">SLNO</th>
+                  <th rowspan="3">Material Name</th>
+                  <th colspan="6">Duties and taxes</th>
+                  <th rowspan="3">Amount</th>
+                </tr>
+                <tr>
+                  <th colspan="2">VAT</th>
+                  <th colspan="2">CST</th>
+                  <th colspan="2">BED</th>
+                </tr>
+                <tr>
+                  <th>%</th>
+                  <th>Amt</th>
+                  <th>%</th>
+                  <th>Amt</th>
+                  <th>%</th>
+                  <th>Amt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td data-DType="double_DT">1</td>
+                  <td data-DType="String_DT">A</td>
+                  <td data-DType="double_DT">2</td>
+                  <td data-DType="double_DT">100</td>
+                  <td data-DType="double_DT">3</td>
+                  <td data-DType="double_DT">200</td>
+                  <td data-DType="double_DT">3</td>
+                  <td data-DType="double_DT">520</td>
+                  <td data-DType="double_DT">4564</td>
+                </tr>
+                <tr>
+                  <td data-DType="double_DT">2</td>
+                  <td data-DType="String_DT">B</td>
+                  <td data-DType="double_DT">4</td>
+                  <td data-DType="double_DT">4545</td>
+                  <td data-DType="double_DT">34</td>
+                  <td data-DType="double_DT">34</td>
+                  <td data-DType="double_DT">34</td>
+                  <td data-DType="double_DT">435</td>                                    
+                  <td data-DType="double_DT">100</td>
+                </tr>
+                <tr>
+                  <td data-DType="double_DT">3</td>
+                  <td data-DType="String_DT">C</td>
+                  <td data-DType="double_DT">43</td>
+                  <td data-DType="double_DT">5345</td>
+                  <td data-DType="double_DT">33</td>
+                  <td data-DType="double_DT">3432</td>
+                  <td data-DType="double_DT">7</td>
+                  <td data-DType="double_DT">767</td>   
+                  <td data-DType="double_DT">67</td>
+                </tr>
+                <tr>
+                  <td data-DType="double_DT">4</td>
+                  <td data-DType="String_DT">D</td>
+                  <td data-DType="String_DT">0042</td>
+                  <td data-DType="double_DT">345</td>
+                  <td data-DType="double_DT">343</td>
+                  <td data-DType="double_DT">4665</td>
+                  <td data-DType="double_DT">9</td>
+                  <td data-DType="double_DT">76</td>
+                  <td data-DType="double_DT">80</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td data-DType="text"></td>
+                    <td data-DType="double_DT">10</td>
+                    <td data-DType="text"></td>
+                    <td data-DType="double_DT">20</td>
+                    <td data-DType="text"></td>
+                    <td data-DType="double_DT">30</td>
+                    <td data-DType="double_DT">40</td>
+                </tr>
+            </tfoot>
+      </table>
+    </body>
+</html>
